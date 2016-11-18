@@ -620,8 +620,8 @@
 /* 右腕 */
 #sholder_r {
 	position: absolute;
-	top: 14px;
-	left: -px;
+	top: 10px;
+	left: 14px;
 	width: 24px;
 	height: 12px;
 	border-radius: 10px 6px 0px 6px / 6px 6px 0px 6px;
