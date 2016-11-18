@@ -23,7 +23,7 @@ var module = angular.module('starter', ['ionic', 'ui.rCalendar'])
 
     });
 })
-    .controller('DateSwiper',function($scope) {
+    .controller('SuperController',function($scope) {
     console.log('CARDS CTRL');
 
     $scope.sliderOptions = {
@@ -46,6 +46,11 @@ var module = angular.module('starter', ['ionic', 'ui.rCalendar'])
     $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
         // note: the indexes are 0-based
         $scope.activeIndex = data.slider.activeIndex;
+        console.log('active index',$scope.activeIndex);
+        if($scope.activeIndex === 5) {
+            var audio = new Audio('tidsrapportera.mp3');
+            audio.play();
+        }
         $scope.previousIndex = data.slider.previousIndex;
     });
 })
@@ -53,9 +58,62 @@ var module = angular.module('starter', ['ionic', 'ui.rCalendar'])
     console.log('CARDS CTRL');
 
     $scope.sliderOptions = {
-        loop: false,
+        loop: true,
         direction: 'vertical',
         speed: 500,
+        spaceBetween: -50,
+        pagination: false
+    }
+    $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
+        console.log('slider init');
+        // data.slider is the instance of Swiper
+        $scope.slider = data.slider;
+    });
+
+    $scope.$on("$ionicSlides.slideChangeStart", function(event, data){
+        console.log('Slide change is beginning');
+    });
+
+    $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
+        // note: the indexes are 0-based
+        $scope.activeIndex = data.slider.activeIndex;
+        $scope.previousIndex = data.slider.previousIndex;
+    });
+})
+    .controller('MinutesSwiper',function($scope) {
+    console.log('activity CTRL');
+
+    $scope.sliderOptions = {
+        loop: true,
+        direction: 'vertical',
+        speed: 500,
+        spaceBetween: -50,
+        pagination: false
+    }
+    $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
+        console.log('slider init');
+        // data.slider is the instance of Swiper
+        $scope.slider = data.slider;
+    });
+
+    $scope.$on("$ionicSlides.slideChangeStart", function(event, data){
+        console.log('Slide change is beginning');
+    });
+
+    $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
+        // note: the indexes are 0-based
+        $scope.activeIndex = data.slider.activeIndex;
+        $scope.previousIndex = data.slider.previousIndex;
+    });
+})
+    .controller('ActivitySwiper',function($scope) {
+    console.log('activity CTRL');
+
+    $scope.sliderOptions = {
+        loop: true,
+        direction: 'vertical',
+        speed: 500,
+        spaceBetween: -50,
         pagination: false
     }
     $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
