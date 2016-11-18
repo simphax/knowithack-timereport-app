@@ -1,7 +1,8 @@
 /* Empty. Add your own CSS if you like */
 
 ion-content {
-    background-color: #169784;
+    background-color: #F3ECE6;
+    font-family: 'Raleway';
 }
 
 .swipebox {
@@ -12,12 +13,34 @@ ion-content {
     box-shadow: 2px 2px 9px rgba(0,0,0,0.3);
 }
 
-.swipebox__datepicker {
+.swipebox__valuepicker {
     width: 100px;
-    height: 40px;
+    height: 100px;
+    background-color: #8E80AD;
+    border-radius: 100px;
+}
+.swipebox__value {
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 42px;
+}
+.swipebox__label {
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 42px;
 }
 
 .calendar {
     height: 100px;
     overflow: scroll;
+}
+
+.event-detail-container {
+    display: none;
+}
+.event-detail-table {
+    display: none;
 }

@@ -49,19 +49,22 @@ navigator.serviceWorker.register('service-worker.js')
                 <ion-slides options="sliderOptions" slider="data.slider">
                     <ion-slide-page>
                         <div class="swipebox">
-                            <div class="swipebox__datepicker" ng-controller="HoursSwiper">
+                            <div class="swipebox__label">
+                                AKTIVITET
+                            </div>
+                            <div class="swipebox__valuepicker" ng-controller="HoursSwiper">
                                 <ion-slides options="sliderOptions" slider="data.slider">
                                     <ion-slide-page>
-                                        <h1>8</h1>
+                                        <div class="swipebox__value">8</div>
                                     </ion-slide-page>
                                     <ion-slide-page>
-                                        <h1>7</h1>
+                                        <div class="swipebox__value">7</div>
                                     </ion-slide-page>
                                     <ion-slide-page>
-                                        <h1>6</h1>
+                                        <div class="swipebox__value">6</div>
                                     </ion-slide-page>
                                     <ion-slide-page>
-                                        <h1>5</h1>
+                                        <div class="swipebox__value">5</div>
                                     </ion-slide-page>
                                 </ion-slides>
                             </div>
