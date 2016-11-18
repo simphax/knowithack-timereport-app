@@ -1,1 +1,19 @@
 /* Empty. Add your own CSS if you like */
+
+ion-content {
+    background-color: #169784;
+}
+
+.swipebox {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    height: 500px;
+    box-shadow: 2px 2px 9px rgba(0,0,0,0.3);
+}
+
+.swipebox__datepicker {
+    width: 100px;
+    height: 40px;
+}
