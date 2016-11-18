@@ -20,12 +20,12 @@
 /* 頭部 */
 #head {
 	position: absolute;
-	top: -58px;
-	left: -8px;
-	width: 48px;
-	height: 48px;
-	border-radius: 24px 24px 24px 24px / 20px 20px 24px 24px;
-	background-color: rgba(249, 219, 209, 1);
+	top: -64px;
+	left: 10px;
+	width: 55px;
+	height: 80px;
+    background-image: url('../img/martin/head.png');
+    background-size: cover;
 	-webkit-transform-origin: 50% 100%;
 	-moz-transform-origin: 50% 100%;
 	-webkit-transform: rotate(15deg);
@@ -40,7 +40,7 @@
 	width: 56px;
 	height: 56px;
 	border-radius: 28px 28px 12px 12px / 28px 28px 12px 12px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	border-top: 2px solid rgba(103, 153, 190, 1);
 	border-left: 2px solid rgba(103, 153, 190, 1);
 	border-right: 2px solid rgba(103, 153, 190, 1);
@@ -58,7 +58,7 @@
 	width: 32px;
 	height: 32px;
 	border-radius: 5px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	border-left: 1px solid rgba(103, 153, 190, 1);
@@ -72,7 +72,7 @@
 	width: 20px;
 	height: 20px;
 	border-radius: 5px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(30deg);
 	-moz-transform: rotate(30deg);
 	border-left: 1px solid rgba(103, 153, 190, 1);
@@ -86,7 +86,7 @@
 	width: 32px;
 	height: 32px;
 	border-radius: 5px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	border-top: 1px solid rgba(103, 153, 190, 1);
@@ -100,7 +100,7 @@
 	width: 20px;
 	height: 20px;
 	border-radius: 5px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(60deg);
 	-moz-transform: rotate(60deg);
 	border-top: 1px solid rgba(103, 153, 190, 1);
@@ -113,7 +113,7 @@
 	left: 18px;
 	width: 20px;
 	height: 20px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	border-bottom: 1px solid rgba(103, 153, 190, 1);
@@ -139,7 +139,7 @@
 	width: 8px;
 	height: 22px;
 	border-radius: 0px 0px 0px 8px / 0px 0px 0px 22px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(20deg);
 	-moz-transform: rotate(20deg);
 }
@@ -151,7 +151,7 @@
 	width: 8px;
 	height: 22px;
 	border-radius: 0px 0px 0px 8px / 0px 0px 0px 22px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(15deg);
 	-moz-transform: rotate(15deg);
 }
@@ -163,7 +163,7 @@
 	width: 8px;
 	height: 22px;
 	border-radius: 0px 0px 8px 0px / 0px 0px 22px 0px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(-15deg);
 	-moz-transform: rotate(-15deg);
 }
@@ -175,7 +175,7 @@
 	width: 8px;
 	height: 22px;
 	border-radius: 0px 0px 8px 0px / 0px 0px 22px 0px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform: rotate(-20deg);
 	-moz-transform: rotate(-20deg);
 }
@@ -204,7 +204,7 @@
 	width: 8px;
 	height: 16px;
 	border-radius: 4px 0px 0px 0px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(10deg);
@@ -218,7 +218,7 @@
 	width: 8px;
 	height: 36px;
 	border-radius: 0px 0px 4px 4px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-8deg);
@@ -232,7 +232,7 @@
 	width: 8px;
 	height: 16px;
 	border-radius: 4px 4px 2px 2px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-45deg);
@@ -246,7 +246,7 @@
 	width: 6px;
 	height: 16px;
 	border-radius: 2px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(90deg);
@@ -260,7 +260,7 @@
 	width: 6px;
 	height: 16px;
 	border-radius: 2px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-100deg);
@@ -274,7 +274,7 @@
 	width: 4px;
 	height: 12px;
 	border-radius: 0px 2px 4px 0px / 0px 2px 12px 0px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(100deg);
@@ -288,7 +288,7 @@
 	width: 2px;
 	height: 6px;
 	border-radius: 0px 0px 2px 0px / 0px 0px 6px 0px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(100deg);
@@ -308,7 +308,7 @@
 	width: 8px;
 	height: 20px;
 	border-radius: 0px 6px 0px 0px / 0px 10px 0px 0px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-15deg);
@@ -322,7 +322,7 @@
 	width: 8px;
 	height: 36px;
 	border-radius: 0px 0px 4px 4px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-2deg);
@@ -336,7 +336,7 @@
 	width: 8px;
 	height: 16px;
 	border-radius: 4px 4px 2px 2px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(45deg);
@@ -350,7 +350,7 @@
 	width: 6px;
 	height: 16px;
 	border-radius: 2px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-100deg);
@@ -364,7 +364,7 @@
 	width: 6px;
 	height: 16px;
 	border-radius: 2px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(100deg);
@@ -378,7 +378,7 @@
 	width: 4px;
 	height: 12px;
 	border-radius: 2px 0px 0px 4px / 2px 0px 0px 12px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-100deg);
@@ -392,7 +392,7 @@
 	width: 2px;
 	height: 6px;
 	border-radius: 0px 0px 0px 2px / 0px 0px 0px 6px;
-	background-color: rgba(35, 55, 80, 1);
+/*	background-color: rgba(35, 55, 80, 1);*/
 	-webkit-transform-origin: 50% 0%;
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-100deg);
@@ -400,6 +400,7 @@
 }
 
 #eye_r {
+    display: none;
 	position: absolute;
 	top: 20px;
 	left: 4px;
@@ -468,6 +469,7 @@
 }
 
 #eye_l {
+    display: none;
 	position: absolute;
 	top: 20px;
 	left: 30px;
@@ -536,6 +538,7 @@
 }
 
 #brow_r {
+    display: none;
 	position: absolute;
 	top: 16px;
 	left: 6px;
@@ -550,6 +553,7 @@
 }
 
 #brow_l {
+    display: none;
 	position: absolute;
 	top: 16px;
 	left: 32px;
@@ -564,6 +568,7 @@
 }
 
 #mouth {
+    display: none;
 	position: absolute;
 	top: 37px;
 	left: 20px;
@@ -577,10 +582,11 @@
 #neck {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 10px;
 }
 
 #neck_tohead {
+    display: none;
 	position: absolute;
 	top: -16px;
 	left: 11px;
@@ -591,6 +597,7 @@
 }
 
 #neckline_upper {
+    display: none;
 	position: absolute;
 	top: -6px;
 	left: 6px;
@@ -601,29 +608,31 @@
 }
 
 #neckline_lower {
+    display: none;
 	position: absolute;
 	top: 0px;
 	left: 6px;
 	width: 20px;
 	height: 16px;
-	background-color: rgba(255, 255, 255, 1);
+/*	background-color: rgba(255, 255, 255, 1);*/
 }
 
 /* 右腕 */
 #sholder_r {
 	position: absolute;
-	top: -7px;
-	left: -17px;
+	top: 10px;
+	left: 14px;
 	width: 24px;
 	height: 12px;
 	border-radius: 10px 6px 0px 6px / 6px 6px 0px 6px;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
-	background-color: rgba(251, 253, 232, 1);
+/*	background-color: rgba(251, 253, 232, 1);*/
 	z-index: 1;
 }
 
 #scarf_r {
+    display: none;
 	position: absolute;
 	top: -2px;
 	left: -8px;
@@ -659,16 +668,16 @@
 
 #upperarm_r {
 	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 12px;
+	top: 10px;
+	left: 10px;
+	width: 16px;
 	height: 48px;
 	border-radius: 4px 4px 6px 6px;
 	-webkit-transform-origin: 6px 6px;
 	-moz-transform-origin: 6px 6px;
 	-webkit-transform: rotate(130deg);
 	-moz-transform: rotate(130deg);
-	background-color: rgba(251, 253, 232, 1);
+	background-color: #151415;
 	z-index: 155;
 }
 
@@ -676,13 +685,18 @@
 	position: absolute;
 	top: 40px;
 	left: 0px;
-	width: 12px;
-	height: 48px;
+	width: 28px;
+	height: 98px;
+    background-image: url('../img/martin/arm.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 	border-radius: 4px 4px 6px 6px;
 	-webkit-transform-origin: 6px 6px;
 	-moz-transform-origin: 6px 6px;
 	-webkit-transform: rotate(12deg);
-	-moz-transform: rotate(12deg);
+	
+/*
 	background: -webkit-gradient(
 		linear, left top, left bottom,
 		from(rgba(251, 253, 232, 1)),
@@ -705,9 +719,11 @@
 		rgba(205, 118, 152, 1) 90%,
 		rgba(205, 118, 152, 1)
 	);
+*/
 }
 
 #lowerarm_r_r {
+    display: none;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -722,6 +738,7 @@
 }
 
 #lowerarm_r_l {
+    display: none;
 	position: absolute;
 	top: 0px;
 	left: 6px;
@@ -736,6 +753,7 @@
 }
 
 #hand_r {
+    display: none;
 	position: absolute;
 	top: 45px;
 	left: 0px;
@@ -764,18 +782,19 @@
 /* 左腕 */
 #sholder_l {
 	position: absolute;
-	top: -4px;
-	left: 14px;
+	top: 15px;
+	left: 50px;
 	width: 24px;
 	height: 12px;
 	border-radius: 6px 10px 6px 0px / 6px 6px 6px 0px;
 	-webkit-transform: rotate(-12deg);
 	-moz-transform: rotate(-12deg);
-	background-color: rgba(251, 253, 232, 0);
+	background-color: #151415;
 	z-index: 1;
 }
 
 #scarf_l {
+    display: none;
 	position: absolute;
 	top: 4px;
 	left: 6px;
@@ -813,14 +832,14 @@
 	position: absolute;
 	top: 0px;
 	left: 12px;
-	width: 12px;
+	width: 16px;
 	height: 48px;
 	border-radius: 4px 4px 6px 6px;
 	-webkit-transform-origin: 6px 6px;
 	-moz-transform-origin: 6px 6px;
 	-webkit-transform: rotate(-66deg);
 	-moz-transform: rotate(-66deg);
-	background-color: rgba(251, 253, 232, 1);
+	background-color: #151415;
 	z-index: 110;
 }
 
@@ -835,31 +854,11 @@
 	-moz-transform-origin: 6px 6px;
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(rgba(251, 253, 232, 1)),
-		color-stop(0.83, rgba(251, 253, 232, 1)),
-		color-stop(0.83, rgba(205, 118, 152, 1)),
-		color-stop(0.87, rgba(205, 118, 152, 1)),
-		color-stop(0.87, rgba(255, 255, 255, 1)),
-		color-stop(0.90, rgba(255, 255, 255, 1)),
-		color-stop(0.90, rgba(205, 118, 152, 1)),
-		to(rgba(205, 118, 152, 1))
-	);
-	background: -moz-linear-gradient(
-		top,
-		rgba(251, 253, 232, 1) 0%,
-		rgba(251, 253, 232, 1) 83%,
-		rgba(205, 118, 152, 1) 83%,
-		rgba(205, 118, 152, 1) 87%,
-		rgba(255, 255, 255, 1) 87%,
-		rgba(255, 255, 255, 1) 90%,
-		rgba(205, 118, 152, 1) 90%,
-		rgba(205, 118, 152, 1)
-	);
+	background-color: #151415;
 }
 
 #lowerarm_l_r {
+    display: none;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -874,6 +873,7 @@
 }
 
 #lowerarm_l_l {
+    display: none;
 	position: absolute;
 	top: 0px;
 	left: 6px;
@@ -898,7 +898,7 @@
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(15deg);
 	-moz-transform: rotate(15deg);
-	background-color: rgba(249, 219, 209, 1);
+	background-color: #ccc;
 }
 
 #hand_l_l {
@@ -910,25 +910,29 @@
 	border-radius: 4px 4px 8px 0px / 4px 4px 8px 0px;
 	-webkit-transform: rotate(-15deg);
 	-moz-transform: rotate(-15deg);
-	background-color: rgba(249, 219, 209, 1);
+	background-color: #ccc;
 }
 
 /* 胸部 */
 #bust {
 	position: absolute;
 	top: -40px;
-	left: -4px;
-	width: 32px;
-	height: 44px;
-	border-radius: 4px 4px 8px 8px / 4px 4px 8px 8px;
+	left: -30px;
+	width: 92px;
+	height: 124px;
+    background-image: url('../img/martin/torso.png');
+    background-size: cover;
+    z-index: 500;
+/*	border-radius: 4px 4px 8px 8px / 4px 4px 8px 8px;*/
 	-webkit-transform-origin: 50% 96%;
 	-moz-transform-origin: 50% 96%;
 	-webkit-transform: rotate(-6deg);
 	-moz-transform: rotate(-6deg);
-	background-color: rgba(251, 253, 232, 1);
+/*	background-color: rgba(251, 253, 232, 1);*/
 }
 
 #bust_r {
+    display: none;
 	position: absolute;
 	top: 0px;
 	left: -3px;
@@ -942,6 +946,7 @@
 }
 
 #bust_l {
+    display: none;
 	position: absolute;
 	top: 0px;
 	left: 25px;
@@ -955,6 +960,7 @@
 }
 
 #ribbon {
+    display: none;
 	position: absolute;
 	top: 16px;
 	left: 13px;
@@ -1087,6 +1093,7 @@
 }
 
 #button_r_upper {
+    display: none;
 	position: absolute;
 	top: 38px;
 	left: 4px;
@@ -1098,6 +1105,7 @@
 }
 
 #button_l_upper {
+    display: none;
 	position: absolute;
 	top: 38px;
 	left: 22px;
@@ -1109,6 +1117,7 @@
 }
 
 #button_r_lower {
+    display: none;
 	position: absolute;
 	top: 10px;
 	left: 0px;
@@ -1119,6 +1128,7 @@
 }
 
 #button_l_lower {
+    display: none;
 	position: absolute;
 	top: 10px;
 	left: 18px;
@@ -1139,6 +1149,7 @@
 }
 
 #waist_r1 {
+    display: none;
 	position: absolute;
 	top: -2px;
 	left: -2px;
@@ -1150,6 +1161,7 @@
 }
 
 #waist_r2 {
+    display: none;
 	position: absolute;
 	top: 12px;
 	left: -2px;
@@ -1161,6 +1173,7 @@
 }
 
 #waist_l2 {
+    display: none;
 	position: absolute;
 	top: -2px;
 	left: 16px;
@@ -1172,6 +1185,7 @@
 }
 
 #waist_l1 {
+    display: none;
 	position: absolute;
 	top: 12px;
 	left: 16px;
@@ -1179,11 +1193,12 @@
 	height: 16px;
 	-webkit-transform: rotate(-9deg);
 	-moz-transform: rotate(-9deg);
-	background-color: rgba(251, 253, 232, 1);
+	background-color: #151415;
 }
 
 /* スカート */
 #skirt {
+    display: none;
 	position: relative;
 	top: 20px;
 	left: -4px;
@@ -1261,7 +1276,7 @@
 	height: 36px;
 	-webkit-transform: rotate(-30deg);
 	-moz-transform: rotate(-30deg);
-	background-color: rgba(251, 253, 232, 1);
+	background-color: #151415;
 	border-right: 3px solid rgba(209, 196, 151, 1);
 }
 
@@ -1273,7 +1288,7 @@
 	height: 34px;
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
-	background-color: rgba(251, 253, 232, 1);
+	background-color: #151415;
 }
 
 /* 股 */
@@ -1298,7 +1313,7 @@
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(15deg);
 	-moz-transform: rotate(15deg);
-	background-color: rgba(249, 219, 209, 1);
+	background-color: #151415;
 }
 
 #thigh_r_r {
@@ -1310,7 +1325,7 @@
 	border-radius: 5px 5px 5px 5px / 20px 0px 0px 5px;
 	-webkit-transform: rotate(-3deg);
 	-moz-transform: rotate(-3deg);
-	background-color: rgba(249, 219, 209, 1);
+	background-color: #151415;
 }
 
 #thigh_r_l {
@@ -1322,7 +1337,7 @@
 	border-radius: 5px;
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
-	background-color: rgba(249, 219, 209, 1);
+	background-color: #151415;
 }
 
 #shin_r {
@@ -1336,20 +1351,7 @@
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-5deg);
 	-moz-transform: rotate(-5deg);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(rgba(249, 219, 209, 1)),
-		color-stop(0.2, rgba(249, 219, 209, 1)),
-		color-stop(0.2, rgba(35, 55, 80, 1)),
-		to(rgba(35, 55, 80, 1))
-	);
-	background: -moz-linear-gradient(
-		top,
-		rgba(249, 219, 209, 1) 0%,
-		rgba(249, 219, 209, 1) 20%,
-		rgba(35, 55, 80, 1) 20%,
-		rgba(35, 55, 80, 1)
-	);
+	background-color: #151415;
 }
 
 #shin_r_r {
@@ -1361,20 +1363,7 @@
 	border-radius: 5px;
 	-webkit-transform: rotate(-3deg);
 	-moz-transform: rotate(-3deg);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(rgba(249, 219, 209, 1)),
-		color-stop(0.2, rgba(249, 219, 209, 1)),
-		color-stop(0.2, rgba(35, 55, 80, 1)),
-		to(rgba(35, 55, 80, 1))
-	);
-	background: -moz-linear-gradient(
-		top,
-		rgba(249, 219, 209, 1) 0%,
-		rgba(249, 219, 209, 1) 20%,
-		rgba(35, 55, 80, 1) 20%,
-		rgba(35, 55, 80, 1)
-	);
+	background-color: #151415;
 }
 
 #foot_r {
@@ -1388,7 +1377,7 @@
 	-moz-transform-origin: 6px 4px;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
-	background-color: rgba(110, 81, 73, 1);
+	background-color: #151415;
 }
 
 #foot_r_socks {
@@ -1398,7 +1387,7 @@
 	width: 8px;
 	height: 14px;
 	border-radius: 3px;
-	background-color: rgba(35, 55, 80, 1);
+	background-color: #151415;
 }
 
 /* 左足 */
@@ -1413,32 +1402,32 @@
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-15deg);
 	-moz-transform: rotate(-15deg);
-	background-color: rgba(249, 219, 209, 1);
+	background-color: #151415;
 }
 
 #thigh_l_r {
 	position: absolute;
 	top: 0px;
 	left: -4px;
-	width: 8px;
+	width: 10px;
 	height: 88px;
 	border-radius: 5px;
 	-webkit-transform: rotate(-3deg);
 	-moz-transform: rotate(-3deg);
-	background-color: rgba(249, 219, 209, 1);
+	background-color: #151415;
 }
 
 #thigh_l_l {
 	position: absolute;
 	top: 8px;
 	left: 6px;
-	width: 8px;
+	width: 10px;
 	height: 80px;
 	border-radius: 5px;
 	border-radius: 5px 5px 5px 5px / 5px 20px 5px 0px;
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
-	background-color: rgba(249, 219, 209, 1);
+	background-color: #151415;
 }
 
 #shin_l {
@@ -1452,20 +1441,7 @@
 	-moz-transform-origin: 50% 0%;
 	-webkit-transform: rotate(-5deg);
 	-moz-transform: rotate(-5deg);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(rgba(249, 219, 209, 1)),
-		color-stop(0.2, rgba(249, 219, 209, 1)),
-		color-stop(0.2, rgba(35, 55, 80, 1)),
-		to(rgba(35, 55, 80, 1))
-	);
-	background: -moz-linear-gradient(
-		top,
-		rgba(249, 219, 209, 1) 0%,
-		rgba(249, 219, 209, 1) 20%,
-		rgba(35, 55, 80, 1) 20%,
-		rgba(35, 55, 80, 1)
-	);
+	background-color: #151415;
 }
 
 #shin_l_l {
@@ -1477,20 +1453,7 @@
 	border-radius: 5px;
 	-webkit-transform: rotate(3deg);
 	-moz-transform: rotate(3deg);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(rgba(249, 219, 209, 1)),
-		color-stop(0.2, rgba(249, 219, 209, 1)),
-		color-stop(0.2, rgba(35, 55, 80, 1)),
-		to(rgba(35, 55, 80, 1))
-	);
-	background: -moz-linear-gradient(
-		top,
-		rgba(249, 219, 209, 1) 0%,
-		rgba(249, 219, 209, 1) 20%,
-		rgba(35, 55, 80, 1) 20%,
-		rgba(35, 55, 80, 1)
-	);
+	background-color: #151415;
 }
 
 #foot_l {
@@ -1504,7 +1467,7 @@
 	-moz-transform-origin: 6px 4px;
 	-webkit-transform: rotate(-20deg) scale(0.9, 1);
 	-moz-transform: rotate(-20deg) scale(0.9, 1);
-	background-color: rgba(110, 81, 73, 1);
+	background-color: #151415;
 }
 
 #foot_l_socks {
@@ -1514,7 +1477,7 @@
 	width: 8px;
 	height: 14px;
 	border-radius: 3px;
-	background-color: rgba(35, 55, 80, 1);
+	background-color: #151415;
 }
 
 /* all */
@@ -1656,6 +1619,7 @@
 }
 
 #backhair {
+    display: none;
 	-webkit-animation-name: backhair_move;
 	-moz-animation-name: backhair_move;
 }
@@ -1679,6 +1643,7 @@
 }
 
 #sideburns {
+    display: none;
 	-webkit-animation-name: sideburns_move;
 	-moz-animation-name: sideburns_move;
 }
