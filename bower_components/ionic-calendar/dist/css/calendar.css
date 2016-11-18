@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway-medium.ttf);
+}
+
+span {
+    font-family: Raleway;
+    font-size: 20px;
+}
+
 .nav-left {
     text-align: left;
 }
@@ -26,7 +36,6 @@
 
 .table {
     width: 100%;
-    max-width: 100%;
     background-color: transparent;
 }
 
@@ -56,7 +65,10 @@
 
 .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th,
 .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
+    border-radius: 50%;
+	width: 50px;
+	height: 50px;
 }
 
 .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
@@ -64,7 +76,7 @@
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
-    background-color: #f9f9f9
+    background-color: #f9f9f9;
 }
 
 .no-event-label {
@@ -128,12 +140,12 @@
 }
 
 .monthview-current {
-    background-color: lightgrey;
+    background-color: #F3F3F3;
 }
 
 .monthview-selected {
-    background-color: #009900;
-    color: white;
+    background-color: #F3F3F3;
+    color: black;
 }
 
 .monthview-eventdetail-timecolumn {
