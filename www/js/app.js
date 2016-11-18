@@ -30,7 +30,6 @@ angular.module('starter', ['ionic', 'ui.rCalendar'])
         loop: false,
         direction: 'horizontal', //or vertical
         speed: 500
-
     }
 
     $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
@@ -57,7 +56,6 @@ angular.module('starter', ['ionic', 'ui.rCalendar'])
         direction: 'vertical',
         speed: 500
     }
-
     $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
         console.log('slider init');
         // data.slider is the instance of Swiper
