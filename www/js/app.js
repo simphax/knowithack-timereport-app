@@ -29,7 +29,8 @@ var module = angular.module('starter', ['ionic', 'ui.rCalendar'])
     $scope.sliderOptions = {
         loop: false,
         direction: 'horizontal', //or vertical
-        speed: 500
+        speed: 500,
+        pagination: false
     }
 
     $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
@@ -54,7 +55,8 @@ var module = angular.module('starter', ['ionic', 'ui.rCalendar'])
     $scope.sliderOptions = {
         loop: false,
         direction: 'vertical',
-        speed: 500
+        speed: 500,
+        pagination: false
     }
     $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
         console.log('slider init');

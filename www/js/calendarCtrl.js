@@ -32,6 +32,7 @@ module.controller('calendarCtrl', function ($scope) {
 
     $scope.onTimeSelected = function (selectedTime, events) {
         console.log('Selected time: ' + selectedTime + ', hasEvents: ' + (events !== undefined && events.length !== 0));
+        
     };
 
     function createRandomEvents() {
@@ -69,5 +70,5 @@ module.controller('calendarCtrl', function ($scope) {
             }
         }
         return events;
-}
+    }
 });

@@ -7,13 +7,17 @@ ion-content {
 .swipebox {
     background-color: white;
     padding: 30px;
-    border-radius: 20px;
     margin: 20px;
-    height: 500px;
+    height: 300px;
     box-shadow: 2px 2px 9px rgba(0,0,0,0.3);
 }
 
 .swipebox__datepicker {
     width: 100px;
     height: 40px;
+}
+
+.calendar {
+    height: 100px;
+    overflow: scroll;
 }

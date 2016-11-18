@@ -42,6 +42,10 @@ navigator.serviceWorker.register('service-worker.js')
     <body ng-app="starter">
         <ion-pane>
             <ion-content scroll="false" ng-controller="DateSwiper">
+                <div class="calendar" ng-controller="calendarCtrl">
+                    <calendar ng-model="calendar.currentDate" calendar-mode="calendar.mode" event-source="calendar.eventSource" range-changed="reloadSource(startTime, endTime)" event-selected="onEventSelected(event)" title-changed="onViewTitleChanged(title)" time-selected="onTimeSelected(selectedTime, events)"
+                    step="30"></calendar>
+                </div>
                 <ion-slides options="sliderOptions" slider="data.slider">
                     <ion-slide-page>
                         <div class="swipebox">
