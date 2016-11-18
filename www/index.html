@@ -33,6 +33,10 @@ navigator.serviceWorker.register('service-worker.js')
 
         <!-- your app's js -->
         <script src="js/app.js"></script>
+        <link rel="stylesheet" href="../bower_components//ionic-calendar/dist/css/calendar.min.css" />
+        <script src="../bower_components/ionic-calendar/dist/js/calendar-tpls.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/calendarCtrl.js"></script>
     </head>
 
     <body ng-app="starter">
@@ -66,7 +70,7 @@ navigator.serviceWorker.register('service-worker.js')
                     </ion-slide-page>
                 </ion-slides>
             </ion-content>
-            
+
         </ion-pane>
     </body>
 
