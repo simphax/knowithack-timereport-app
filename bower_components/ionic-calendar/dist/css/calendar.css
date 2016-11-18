@@ -48,7 +48,6 @@ span {
 
 .table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
 }
 
 .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
@@ -56,23 +55,20 @@ span {
 }
 
 .table > tbody + tbody {
-    border-top: 2px solid #ddd;
 }
 
 .table-bordered {
-    border: 1px solid #ddd;
 }
 
 .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th,
 .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
     /*border: 1px solid #ddd;*/
     border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 }
 
 .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
-    border-bottom-width: 2px;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
@@ -86,7 +82,6 @@ span {
 }
 
 .event-detail-container {
-    border-top: 2px darkgrey solid;
     margin-top: 262px;
 }
 

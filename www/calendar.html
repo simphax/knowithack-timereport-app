@@ -11,28 +11,21 @@
 </head>
 
 <body>
-    <ion-nav-bar class="bar-positive" align-title="left">
-        <ion-nav-back-button>
-        </ion-nav-back-button>
+    <ion-nav-bar align-title="left">
+
     </ion-nav-bar>
-    <ion-nav-view></ion-nav-view>
-    <ion-view view-title={{viewTitle}}>
+    <ion-view >
         <ion-nav-buttons side="right">
             <button class="button" ng-disabled="isToday()" ng-click="today()">Today</button>
             <button class="button" ng-click="changeMode('month')">M</button>
             <button class="button" ng-click="changeMode('week')">W</button>
             <button class="button" ng-click="changeMode('day')">D</button>
-            <button class="button" ng-click="loadEvents()">Load Events</button>
         </ion-nav-buttons>
 
         <ion-content scroll="false" class="main-content">
-            <calendar ng-model="calendar.currentDate" calendar-mode="calendar.mode" event-source="calendar.eventSource" range-changed="reloadSource(startTime, endTime)" event-selected="onEventSelected(event)" title-changed="onViewTitleChanged(title)" time-selected="onTimeSelected(selectedTime, events)"
+            <calendar ng-model="calendar.currentDate" calendar-mode="calendar.mode"  range-changed="reloadSource(startTime, endTime)" title-changed="onViewTitleChanged(title)" time-selected="onTimeSelected(selectedTime, events)"
                 step="30"></calendar>
         </ion-content>
     </ion-view>
 </body>
-
-
-
-
 </html>
