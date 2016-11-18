@@ -66,6 +66,7 @@ span {
     border-radius: 50%;
 	width: 30px;
 	height: 30px;
+
 }
 
 .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
@@ -141,6 +142,10 @@ span {
 .monthview-selected {
     background-color: #F3F3F3;
     color: black;
+    background-image: url(../images/check-rapportera.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .monthview-eventdetail-timecolumn {
