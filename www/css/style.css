@@ -100,8 +100,9 @@ ion-content {
 
 
 .calendar {
-    height: 100px;
+    height: 50px;
     overflow: scroll;
+    background-color: #fff;
 }
 
 .event-detail-container {

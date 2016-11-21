@@ -51,8 +51,58 @@ var module = angular.module('starter', ['ionic', 'ui.rCalendar'])
             var audio = new Audio('tidsrapportera.mp3');
             audio.play();
         }
+//        var firstDate = new Date('2016-11-13');
+//        var eventSource = [];
+//        for(var i=0; i<$scope.activeIndex+1) {
+//            var date = new Date(firstDate.getTime());
+//            date.setDate(date.getDate() + i);
+//            eventSource.push({
+//                title: 'adsf',
+//                startTime: date,
+//                endTime: date,
+//                allDay: true
+//            });
+//        }
+//        $scope.calendar.eventSource = eventSource;
+        
         $scope.previousIndex = data.slider.previousIndex;
     });
+        
+    $scope.calendar = {};
+        
+    $scope.changeMode = function (mode) {
+        $scope.calendar.mode = mode;
+    };
+
+    $scope.loadEvents = function () {
+        $scope.calendar.eventSource = createRandomEvents();
+    };
+
+    $scope.onEventSelected = function (event) {
+        console.log('Event selected:' + event.startTime + '-' + event.endTime + ',' + event.title);
+    };
+
+    $scope.onViewTitleChanged = function (title) {
+        $scope.viewTitle = title;
+    };
+
+    $scope.today = function () {
+        $scope.calendar.currentDate = new Date();
+    };
+
+    $scope.isToday = function () {
+        var today = new Date(),
+            currentCalendarDate = new Date($scope.calendar.currentDate);
+
+        today.setHours(0, 0, 0, 0);
+        currentCalendarDate.setHours(0, 0, 0, 0);
+        return today.getTime() === currentCalendarDate.getTime();
+    };
+
+    $scope.onTimeSelected = function (selectedTime, events) {
+        console.log('Selected time: ' + selectedTime + ', hasEvents: ' + (events !== undefined && events.length !== 0));
+        
+    };
 })
     .controller('HoursSwiper',function($scope) {
     console.log('CARDS CTRL');

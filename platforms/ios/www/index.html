@@ -1,45 +1,421 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
 
-    <link rel="manifest" href="manifest.json">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
 
-    <!-- un-comment this code to enable service worker
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.log('Error', err));
-      }
-    </script>-->
+        <link rel="manifest" href="manifest.json">
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+        <!-- un-comment this code to enable service worker
+<script>
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('service-worker.js')
+.then(() => console.log('service worker installed'))
+.catch(err => console.log('Error', err));
+}
+</script>-->
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/martin.css" rel="stylesheet">
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+<link href="css/ionic.app.css" rel="stylesheet">
+-->
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter" class="platform-ios platform-cordova platform-webview">
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
-  </body>
+        <!-- your app's js -->
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" href="../bower_components//ionic-calendar/dist/css/calendar.css" />
+        <script src="../bower_components/ionic-calendar/dist/js/calendar-tpls.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/calendarCtrl.js"></script>
+    </head>
+
+    <body ng-app="starter" ng-controller="SuperController" class="platform-ios platform-cordova platform-webview">
+        <ion-pane>
+            <ion-content scroll="false">
+                <div class="calendar">
+                    <calendar ng-model="calendar.currentDate" calendar-mode="calendar.mode" event-source="calendar.eventSource" range-changed="reloadSource(startTime, endTime)" event-selected="onEventSelected(event)" title-changed="onViewTitleChanged(title)" time-selected="onTimeSelected(selectedTime, events)"
+                    step="30"></calendar>
+                </div>
+                <ion-slides options="sliderOptions" slider="data.slider">
+                    <ion-slide-page>
+                        <div class="swipebox">
+                            <div class="swipebox__label">
+                                AKTIVITET
+                            </div>
+                            <div class="swipebox__activitypicker" ng-controller="ActivitySwiper">
+                                <ion-slides options="sliderOptions" slider="data.slider">
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Telia UX design</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Semester</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Sjuk</div>
+                                    </ion-slide-page>
+                                </ion-slides>
+                            </div>
+                            <div class="swipebox__valuepickers">
+                                <div class="swipebox__valuepicker" ng-controller="HoursSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">8</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">7</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">6</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">5</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">4</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">3</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">2</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">1</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">0</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                                <div class="swipebox__valuepicker" ng-controller="MinutesSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">45</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">30</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">15</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                            </div>
+                        </div>
+                    </ion-slide-page>
+                    <ion-slide-page>
+                        <div class="swipebox">
+                            <div class="swipebox__label">
+                                AKTIVITET
+                            </div>
+                            <div class="swipebox__activitypicker" ng-controller="ActivitySwiper">
+                                <ion-slides options="sliderOptions" slider="data.slider">
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Telia UX design</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Semester</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Sjuk</div>
+                                    </ion-slide-page>
+                                </ion-slides>
+                            </div>
+                            <div class="swipebox__valuepickers">
+                                <div class="swipebox__valuepicker" ng-controller="HoursSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">8</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">7</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">6</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">5</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">4</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">3</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">2</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">1</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">0</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                                <div class="swipebox__valuepicker" ng-controller="MinutesSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">45</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">30</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">15</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                            </div>
+                        </div>
+                    </ion-slide-page>
+                    <ion-slide-page>
+                        <div class="swipebox">
+                            <div class="swipebox__label">
+                                AKTIVITET
+                            </div>
+                            <div class="swipebox__activitypicker" ng-controller="ActivitySwiper">
+                                <ion-slides options="sliderOptions" slider="data.slider">
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Telia UX design</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Semester</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Sjuk</div>
+                                    </ion-slide-page>
+                                </ion-slides>
+                            </div>
+                            <div class="swipebox__valuepickers">
+                                <div class="swipebox__valuepicker" ng-controller="HoursSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">8</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">7</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">6</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">5</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">4</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">3</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">2</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">1</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">0</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                                <div class="swipebox__valuepicker" ng-controller="MinutesSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">45</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">30</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">15</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                            </div>
+                        </div>
+                    </ion-slide-page>
+                    <ion-slide-page>
+                        <div class="swipebox">
+                            <div class="swipebox__label">
+                                AKTIVITET
+                            </div>
+                            <div class="swipebox__activitypicker" ng-controller="ActivitySwiper">
+                                <ion-slides options="sliderOptions" slider="data.slider">
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Telia UX design</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Semester</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Sjuk</div>
+                                    </ion-slide-page>
+                                </ion-slides>
+                            </div>
+                            <div class="swipebox__valuepickers">
+                                <div class="swipebox__valuepicker" ng-controller="HoursSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">8</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">7</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">6</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">5</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">4</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">3</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">2</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">1</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">0</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                                <div class="swipebox__valuepicker" ng-controller="MinutesSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">45</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">30</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">15</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                            </div>
+                        </div>
+                    </ion-slide-page>
+                    <ion-slide-page>
+                        <div class="swipebox">
+                            <div class="swipebox__label">
+                                AKTIVITET
+                            </div>
+                            <div class="swipebox__activitypicker" ng-controller="ActivitySwiper">
+                                <ion-slides options="sliderOptions" slider="data.slider">
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Telia UX design</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Semester</div>
+                                    </ion-slide-page>
+                                    <ion-slide-page>
+                                        <div class="swipebox__activity">Sjuk</div>
+                                    </ion-slide-page>
+                                </ion-slides>
+                            </div>
+                            <div class="swipebox__valuepickers">
+                                <div class="swipebox__valuepicker" ng-controller="HoursSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">8</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">7</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">6</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">5</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">4</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">3</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">2</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">1</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">0</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                                <div class="swipebox__valuepicker" ng-controller="MinutesSwiper">
+                                    <ion-slides options="sliderOptions" slider="data.slider">
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">45</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">30</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">15</div>
+                                        </ion-slide-page>
+                                        <ion-slide-page>
+                                            <div class="swipebox__value">00</div>
+                                        </ion-slide-page>
+                                    </ion-slides>
+                                </div>
+                            </div>
+                        </div>
+                    </ion-slide-page>
+                    <ion-slide-page>
+                        <div class="martinbox">
+                            <martin></martin>
+                        </div>
+                    </ion-slide-page>
+                </ion-slides>
+            </ion-content>
+
+        </ion-pane>
+    </body>
+
 </html>
